@@ -1,0 +1,29 @@
+footer {
+    background: rgb(55, 128, 116);
+    background: -moz-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378074", endColorstr="#2c5a69", GradientType=1);
+}
+
+footer{
+    color: white;
+}
+
+.social-link{
+    color:white;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.sub-input{
+    padding: 1.9em;
+    border-radius: 20px;
+}
+
+.sub-btn{
+    padding: 1.2em;
+    color: #11706C;
+    border-radius: 20px;
+}
+

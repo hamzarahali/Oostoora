@@ -1,0 +1,35 @@
+
+.card{
+    border:none !important;
+}
+
+.title, .sub-title{
+    color:#2C5A69
+}
+
+.card-content{
+    border:1px solid #378074;
+    width: 80%;
+    height: 20rem;
+}
+
+.card-img{
+    width: 135px;
+    margin: 0 auto;
+}
+
+.card-desc{
+    font-size: 12px;
+    padding: 0 12px;
+    font-weight: 400 ;
+}
+
+.card-link{
+    border: 1px solid #2C5A69;
+    color:#2C5A69;
+    margin: 0 auto;
+    padding: 5px 15px;
+    border-radius: 35px;
+    font-size: 12px;
+}
+

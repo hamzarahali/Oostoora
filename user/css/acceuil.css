@@ -1,0 +1,125 @@
+.navbar {
+    margin: 0 !important;
+}
+
+
+.header{
+    background: rgb(55, 128, 116);
+    background: -moz-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378074", endColorstr="#2c5a69", GradientType=1);
+
+    color:white;
+}
+
+.header-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-title{
+    margin:15% 20%;
+}
+
+.header-title > h1, .header-title > h2{
+    font-weight: 700;
+}
+
+.header-link{
+    padding: 15px 30px;
+    color:white;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.categorie{
+    text-align: center!important;
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px #00000014;
+}
+.categorie-img{
+    width: 200px;
+}
+
+.categorie-title{
+    color: #254F61;
+}
+
+.objc-title{
+    color:#11706C;
+}
+
+.objc-sub-title, .act-title{
+    color:#2C5A69;
+}
+.objc-desc{
+    width: 75%;
+}
+.objc-img{
+    width:25vw
+}
+
+.act{
+    box-shadow: 0 3px 6px #00000023;
+    border-radius: 40px;
+}
+
+.act-img{
+    top: -60;
+    position: relative;
+}
+.act-title{
+    position: relative;
+    top: -40px;
+}
+.act-link{
+    color: #378F74;
+    border: 1.5px solid #378F74;
+    padding: 7px 20px;
+    border-radius: 30px;
+    position: relative;
+    top: -20px;
+}
+.rdv-img{
+    width: 100%;
+}
+.rdv-title{
+    color:#254F61;
+}
+.rdv-sub-title{
+    color:#254F61;
+}
+.rdv-title{
+    color:#2C5A69;
+}
+
+.rdv-btn , .question-btn{
+    background: rgb(55, 128, 116);
+    background: -moz-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378074", endColorstr="#2c5a69", GradientType=1);
+    width: fit-content;
+    padding: 10px 85px;
+    border-radius: 30px;
+}
+
+.rdv-btn > a, .question-btn > a{
+    color:white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.question-title{
+    color:#254F61;
+    margin: 40px 0;
+}
+.question-img{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+

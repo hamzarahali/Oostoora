@@ -1,0 +1,82 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	font-family: Roboto, serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.navbar {
+    background: rgb(55, 128, 116);
+    background: -moz-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378074", endColorstr="#2c5a69", GradientType=1);
+}
+
+.navbar-brand>img {
+    width: 140px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    margin: 0 5em 0 0;
+    font-size: 14px;
+}
+
+.nav-item>a {
+    color: white;
+    text-decoration: none;
+}
+
+.active>a {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.search-input {
+    background: transparent;
+    border-radius: 30px;
+    padding-left: 50px;
+    border: 1.5px solid white;
+}
+
+.search-input::placeholder {
+    color: white;
+
+}
+
+.search-input:focus {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: white;
+    color: white;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.623);
+
+}

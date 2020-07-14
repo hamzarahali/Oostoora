@@ -1,0 +1,37 @@
+
+.card{
+    border:none !important;
+}
+
+.title, .card-desc >h6{
+    color:#2C5A69
+}
+
+.heart{
+    position: absolute;
+    right: 3rem;
+    top:3rem
+}
+
+.start{
+    color: rgb(255, 196, 0)
+}
+
+.card-content{
+    box-shadow: 0 3px 6px #00000021;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 17rem;
+}
+
+.card-img{
+    width: 135px;
+    margin: 0 auto;
+}
+
+.card-desc{
+    font-size: 10px;
+}
+
+

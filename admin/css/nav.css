@@ -1,0 +1,72 @@
+.nav {
+    background: rgb(55, 128, 116);
+    background: -moz-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378074", endColorstr="#2c5a69", GradientType=1);
+
+    height: 100vh;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.nav-logo{
+    margin: 0 auto;
+}
+.nav-logo img{
+    height: 4rem;
+
+}
+
+.nav-items{
+    margin: 0 auto;
+    margin-left: 7rem;
+}
+
+.sub-nav{
+    font-weight: 900;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 1.5rem auto;
+}
+
+
+a, a:hover{
+    margin-right: .5rem;
+    color: white;
+}
+
+.inscrp-link:before{
+    width: 10%;
+    height: 5%;
+    left: 4.5rem;
+    margin-top: -1px;   
+    content: " ";
+    background-image: url(../image/inscrp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.rdv-link:before{
+    width: 10%;
+    height: 5%;
+    left: 4.5rem;
+    margin-top: -1px;   
+    content: " ";
+    background-image: url(../image/rendez-vous.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.active{
+    background: linear-gradient(45deg, #ffffff1a, transparent);
+    padding: 5px;
+    width: 140%;
+}

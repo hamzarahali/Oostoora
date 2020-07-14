@@ -1,0 +1,145 @@
+.border {
+    background: rgb(55, 128, 116);
+    background: -moz-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378074", endColorstr="#2c5a69", GradientType=1);
+
+    height: 100vh;
+}
+
+.wave {
+
+    position: absolute;
+    bottom: -99px;
+    left: -16px;
+    height: 1600px;
+    z-index: -1;
+    width: 51%;
+}
+
+
+.info-content {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+.info-content .title {
+    margin: 15px 0;
+    color: #11706C;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.info-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+}
+
+.info-content .input-div.one {
+    margin-top: 0;
+}
+
+
+
+
+.input-div>div>h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    transition: .3s;
+}
+
+
+
+.input-div>div>input {
+    outline: none;
+    background: none;
+    width: 29rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+textarea {
+    height: 10rem;
+    width: 29rem;
+}
+
+input,
+textarea,
+.custom-file-label {
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #11706C;
+    box-shadow: 3px 5px 2px #0000001f;
+    outline: none !important;
+    padding: 1rem 2rem;
+
+}
+
+.custom-file-label::after{
+    appearance: none !important;
+    display: none;
+}
+input::placeholder,
+textarea::placeholder {
+    color: #11706C;
+}
+
+.input-div.pass {
+    margin-bottom: 4px;
+}
+
+.custom-file, .custom-file-input, .custom-file-label{
+    height: auto !important;
+    text-align: left;
+}
+
+a {
+    display: block;
+    text-decoration: #11706C underline;
+    color: rgb(0, 0, 0);
+    /* font-size: 0.9rem; */
+    transition: .3s;
+}
+
+a:hover {
+    color: white;
+}
+
+.btn {
+    display: block;
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: rgb(55, 128, 116);
+    background: -moz-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background: linear-gradient(90deg, rgba(55, 128, 116, 1) 0%, rgba(8, 108, 106, 1) 38%, rgba(44, 90, 105, 1) 100%);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0 auto;
+}
+
+
+.btn:hover {
+    color: white;
+}
