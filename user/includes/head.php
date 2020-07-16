@@ -43,7 +43,7 @@
                             <div class="nav-auth">
                                 <ul class="nav-items navbar-nav float-right">
                                     <li class="nav-item">
-                                        <a class="nav-link font-weight-bold" href="connexion.html">Se connecter</a>
+                                        <a class="nav-link font-weight-bold" href="connexion_front.php">Se connecter</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link font-weight-bold" href="inscp1.html">S'inscrire</a>

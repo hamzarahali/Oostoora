@@ -21,8 +21,12 @@
 
     </div>
     <div class="info-content">
-      <form method="POST" action="connexion.php" enctype="multipart/from-data">
+      <form method="POST" action="connexion.php">
         <img src="./image/Groupe 862.png">
+        <?php             
+                    session_start(); 
+                
+if (isset($_GET['msg'])) { ?> <h5 class="btn btn-info" style="    width: 102%;"><?= $_GET['msg'] ?></h5> <?php } ?>
         <h2 class="title">Bienvenue</h2>
         <div class="input-div one">
           <div class="div">
@@ -33,7 +37,7 @@
                 font-size: 2rem;
                 top: 18px;
             "></i>
-            <input type="text" class="form-control input " placeholder="Email">
+            <input type="text" name="email" class="form-control input " placeholder="Email">
           </div>
         </div>
         <div class="input-div one">
@@ -45,10 +49,10 @@
                 font-size: 2rem;
                 top: 18px;
             "></i>
-            <input type="password" class="form-control input " placeholder="Mot de passe">
+            <input type="password" name="password" class="form-control input " placeholder="Mot de passe">
           </div>
         </div>
-        <input type="submit" class="btn" value="Se connecter">
+        <input type="submit" name="connecter" class="btn" value="Se connecter">
 
         <a href="inscp1.html" class="d-block py-4">Ma Première Connexion</a>
 
