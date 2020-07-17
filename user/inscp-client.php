@@ -5,7 +5,7 @@
         
         $nom = $_POST ['nom'] ; 
         $date = $_POST ['date'] ;
-        $code = $_POST ['code'] ;
+        $cat = $_POST ['cat'] ;
         $tel = $_POST ['tel'] ; 
         $email = $_POST ['email'] ; 
         $password = md5($_POST ['password']) ;
@@ -17,7 +17,7 @@
 
         if ( $num == 0 ) {
 
-            $req = "INSERT INTO fournisseur (nom, datec, numtel, idcat, mail, mdp, status) VALUES ('$nom', '$date', '$tel', '$code', '$email', '$password', '$status') ";
+            $req = "INSERT INTO fournisseur (nom, datec, numtel, idcat, mail, mdp, status) VALUES ('$nom', '$date', '$tel', $cat, '$email', '$password', '$status') ";
             $res = mysqli_query($con, $req) ;
 
             if ( $res ) {

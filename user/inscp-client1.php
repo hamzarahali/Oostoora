@@ -41,7 +41,17 @@ if (isset($_GET['msg'])) { ?> <h5 class="btn btn-info" style="    width: 102%;">
                 </div>
                 <div class="input-div one">
                     <div class="div">
-                        <input type="text" name="code" class="form-control input " placeholder="Code fiscale">
+                    <select name="cat" class="form-control input " >
+                        <?php 
+                            include './includes/db.php' ; 
+                            $req = "SELECT * FROM categorie" ;
+                            $res = mysqli_query ($con, $req) ;
+
+                            while ( $row = mysqli_fetch_assoc($res) ) {
+                        ?>
+                            <option value="<?= $row['idcat'] ?>"><?= $row ['nom'] ?></option>
+                            <?php }?>
+                        </select>
                     </div>
                 </div>
                 <div class="input-div one">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 16 juil. 2020 à 17:05
+-- Généré le : ven. 17 juil. 2020 à 11:12
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.5
 
@@ -117,6 +117,15 @@ CREATE TABLE `locations` (
   `type_client` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `locations`
+--
+
+INSERT INTO `locations` (`id`, `rue`, `code_postal`, `region`, `id_client`, `type_client`) VALUES
+(8, '12', 12, 'ariana', 1, 'client'),
+(9, '15', 55, 'ataoa', 1, 'client'),
+(10, '15', 55, 'ariana', 1, 'client');
+
 -- --------------------------------------------------------
 
 --
@@ -222,7 +231,8 @@ ALTER TABLE `entreprise`
 -- Index pour la table `fournisseur`
 --
 ALTER TABLE `fournisseur`
-  ADD PRIMARY KEY (`idfourni`);
+  ADD PRIMARY KEY (`idfourni`),
+  ADD KEY `fk1` (`idcat`);
 
 --
 -- Index pour la table `locations`
@@ -286,19 +296,19 @@ ALTER TABLE `entreprise`
 -- AUTO_INCREMENT pour la table `fournisseur`
 --
 ALTER TABLE `fournisseur`
-  MODIFY `idfourni` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `idfourni` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT pour la table `locations`
 --
 ALTER TABLE `locations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT pour la table `marque`
 --
 ALTER TABLE `marque`
-  MODIFY `idm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `newsletter`
@@ -310,13 +320,23 @@ ALTER TABLE `newsletter`
 -- AUTO_INCREMENT pour la table `produit`
 --
 ALTER TABLE `produit`
-  MODIFY `idp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `rendez_vous`
 --
 ALTER TABLE `rendez_vous`
   MODIFY `idren` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `fournisseur`
+--
+ALTER TABLE `fournisseur`
+  ADD CONSTRAINT `fk1` FOREIGN KEY (`idcat`) REFERENCES `categorie` (`idcat`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

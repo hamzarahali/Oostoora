@@ -53,8 +53,10 @@
                         </li>
                         <li class="nav-item">
                             <div class="form-group has-search">
-                                <span class="fa fa-search form-control-feedback"></span>
-                                <input type="text" class=" search-input form-control" placeholder="Recherche">
+                                <form action="categories.php" method="GET">
+                                    <span class="fa fa-search form-control-feedback"></span>
+                                    <input type="text" name="rech" class=" search-input form-control" placeholder="Recherche">
+                                </form>
                             </div>
                         </li>
                     </ul>
